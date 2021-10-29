@@ -1,0 +1,16 @@
+POST http://localhost:5000/api/graphql
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
+
+query {
+  users {
+    name
+    email
+    postsCount
+    posts {
+      title
+    }
+    
+  }
+}
+
